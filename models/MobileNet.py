@@ -21,7 +21,7 @@ class BasicConv2dBlock(nn.Module):
             input_channels        (int): 输入通道数
             output_channels       (int): 输出通道数
             kernel_size           (int): 卷积核大小
-            downsample (bool, optional): 是否进行下采样. Defaults to True.
+            downsample (bool, optional): 是否进行下采样(一些比较小的图片如果下采样后，到后面结构太小了). Defaults to True.
         """
         super(BasicConv2dBlock,self).__init__()
         # 判断是否进行下采样
